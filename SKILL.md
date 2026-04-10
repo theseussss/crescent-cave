@@ -21,11 +21,11 @@ argument-hint: "[你的体验、困惑或问题]"
 
 ## 项目路径
 
-视角档案目录：`C:/Users/Administrator/projects/crescent-cave/perspectives/`
+视角档案目录：`H:/04社会科学研究指南/01AI时代生存指南/crescent-cave/perspectives/`
 讨论产出目录：`C:/Users/Administrator/discussions/`
 
-读取视角索引：`C:/Users/Administrator/projects/crescent-cave/perspectives/_index.md`
-读取具体视角：`C:/Users/Administrator/projects/crescent-cave/perspectives/{id}.md`
+读取视角索引：`H:/04社会科学研究指南/01AI时代生存指南/crescent-cave/perspectives/_index.md`
+读取具体视角：`H:/04社会科学研究指南/01AI时代生存指南/crescent-cave/perspectives/{id}.md`
 
 ## 核心工作流
 
