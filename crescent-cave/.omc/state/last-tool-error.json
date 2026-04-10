@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"mv \\\"C:/Users/Administrator/projects/crescent-cave\\\" \\\"H:/04社会科学研究指南/01AI时代生存指南/crescent-cave\\\" && echo \\\"✓ 项目已移动\\\"\",\"description\":\"移动项目到目标目录\"}",
-  "error": "Exit code 1\nmv: cannot remove 'C:/Users/Administrator/projects/crescent-cave': Device or resource busy",
-  "timestamp": "2026-04-10T04:25:45.359Z",
-  "retry_count": 1
-}
