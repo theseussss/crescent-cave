@@ -183,13 +183,50 @@ cp -r perspectives .antigravity/skills/crescent-cave/
 
 ## 添加新视角
 
-```
-perspectives/
-├── _index.md          ← 在这里注册
-└── your-perspective.md ← 创建角色档案
-```
+视角库是 **大类型 → 类型 → 角色** 三级结构。添加新视角时，根据场景选择对应路径：
 
-角色档案格式：
+### 往现有类型里加角色
+
+> 例：在道家类型下新增一个角色
+
+1. 在类型目录下创建角色文件：`perspectives/daoist/{id}.md`
+2. 更新类型的选取逻辑：`perspectives/daoist/_type.md` 的选取逻辑表中添加一行
+3. 更新索引：`perspectives/_index.md` 对应类型的角色列
+4. 更新展示：`README.md` 视角库表格对应行
+
+### 新建一个类型
+
+> 例：新增"存在主义"类型，下设加缪、萨特
+
+**目录型（多角色）：**
+
+1. 创建目录 + 共性底座：`perspectives/{type-id}/_type.md`
+2. 创建子角色文件：`perspectives/{type-id}/{role-id}.md`
+3. 更新索引：`perspectives/_index.md` 对应大类型下添加一行
+4. 更新展示：`README.md` 视角库表格
+
+**单文件型（一人一类型）：**
+
+1. 创建角色文件：`perspectives/{id}.md`
+2. 更新索引：`perspectives/_index.md` 对应大类型下添加一行
+3. 更新展示：`README.md` 视角库表格
+
+### 新建一个大类型
+
+1. 完成上述"新建类型"的步骤
+2. 在 `perspectives/_index.md` 中新增 `##` 标题 + 表格
+3. 在 `README.md` 中新增 `###` 标题 + 表格
+
+### Checklist
+
+每次添加后确认：
+
+- [ ] 角色文件已创建，包含：角色设定、核心框架、语气特征、独特价值、盲区
+- [ ] `perspectives/_index.md` 已更新
+- [ ] `README.md` 视角库表格已更新
+- [ ] 如属目录型类型，`_type.md` 的选取逻辑已更新
+
+### 角色档案格式
 
 ```yaml
 ---
@@ -201,16 +238,19 @@ triggers: 适用场景描述
 ---
 
 ## 角色设定
-[这个人是谁]
+[这个人是谁，精通什么，有什么生命经验]
 
 ## 核心框架
-[分析问题的依据]
+[分析问题时依赖的主要理论/经典/方法]
 
 ## 语气特征
-[说话的方式]
+[说话方式、用词风格、人格特质]
 
 ## 独特价值
 [只有这个视角能提供的东西]
+
+## 盲区
+[这个视角看不到或容易偏颇的地方]
 ```
 
 ## 设计哲学
