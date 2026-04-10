@@ -21,11 +21,13 @@ argument-hint: "[你的体验、困惑或问题]"
 
 ## 项目路径
 
-视角档案目录：`H:/04社会科学研究指南/01AI时代生存指南/crescent-cave/perspectives/`
-讨论产出目录：`C:/Users/Administrator/discussions/`
+视角档案与本 SKILL.md 在同一目录下。读取视角时，先确定本文件所在目录，然后：
 
-读取视角索引：`H:/04社会科学研究指南/01AI时代生存指南/crescent-cave/perspectives/_index.md`
-读取具体视角：`H:/04社会科学研究指南/01AI时代生存指南/crescent-cave/perspectives/{id}.md`
+读取视角索引：`{skill目录}/perspectives/_index.md`
+读取具体视角：`{skill目录}/perspectives/{id}.md`
+讨论产出目录：`~/discussions/`（如不存在则创建）
+
+> 实际路径取决于安装位置。标准安装在 `~/.claude/skills/crescent-cave/`。
 
 ## 核心工作流
 
