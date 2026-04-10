@@ -129,6 +129,28 @@ cp SKILL.md .github/copilot-instructions.md
 cp -r perspectives .github/perspectives
 ```
 
+### Codex CLI
+
+```bash
+mkdir -p .codex/skills/crescent-cave
+cp SKILL.md .codex/skills/crescent-cave/
+cp -r perspectives .codex/skills/crescent-cave/
+```
+
+或将 `SKILL.md` 内容添加到 `AGENTS.md`。
+
+### Gemini CLI
+
+将 `SKILL.md` 内容添加到项目根目录的 `GEMINI.md` 文件中，`perspectives/` 目录放在项目内引用。
+
+### Antigravity
+
+```bash
+mkdir -p .antigravity/skills/crescent-cave
+cp SKILL.md .antigravity/skills/crescent-cave/
+cp -r perspectives .antigravity/skills/crescent-cave/
+```
+
 ### 通用方式（任何支持自定义指令的 AI IDE）
 
 1. 将 `SKILL.md` 的内容放入该工具的**系统指令/自定义规则**位置
