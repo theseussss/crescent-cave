@@ -89,17 +89,51 @@
 
 ## 安装
 
+先克隆仓库：
+
 ```bash
-# 1. 克隆仓库
 git clone https://github.com/theseussss/crescent-cave.git
-
-# 2. 复制到 Claude Code skills 目录
-mkdir -p ~/.claude/skills/crescent-cave
-cp crescent-cave/SKILL.md ~/.claude/skills/crescent-cave/
-cp -r crescent-cave/perspectives ~/.claude/skills/crescent-cave/
-
-# 3. 重启 Claude Code，使用 /crescent-cave 调用
+cd crescent-cave
 ```
+
+然后根据你的 IDE/CLI 选择安装方式：
+
+### Claude Code (CLI / Desktop)
+
+```bash
+mkdir -p ~/.claude/skills/crescent-cave
+cp SKILL.md ~/.claude/skills/crescent-cave/
+cp -r perspectives ~/.claude/skills/crescent-cave/
+# 重启后使用 /crescent-cave 调用
+```
+
+### Cursor
+
+```bash
+mkdir -p .cursor/skills/crescent-cave
+cp SKILL.md .cursor/skills/crescent-cave/
+cp -r perspectives .cursor/skills/crescent-cave/
+```
+
+或在项目根目录创建 `.cursorrules`，将 `SKILL.md` 内容粘贴进去。
+
+### Windsurf
+
+将 `SKILL.md` 内容添加到项目根目录的 `.windsurfrules` 文件中，`perspectives/` 目录放在项目内，路径在规则文件中引用。
+
+### VS Code + Copilot
+
+```bash
+mkdir -p .github
+cp SKILL.md .github/copilot-instructions.md
+cp -r perspectives .github/perspectives
+```
+
+### 通用方式（任何支持自定义指令的 AI IDE）
+
+1. 将 `SKILL.md` 的内容放入该工具的**系统指令/自定义规则**位置
+2. 将 `perspectives/` 目录放在工具能读取的路径下
+3. 确保 `SKILL.md` 中的路径引用指向 `perspectives/` 的实际位置
 
 ## 添加新视角
 
