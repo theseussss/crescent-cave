@@ -13,9 +13,6 @@
 
 适用于 Claude Code · Cursor · Windsurf · VS Code · Codex · Gemini CLI 等 AI IDE 的多视角对话 skill
 
-道家修行者 · 荣格 · 毛泽东 · 加缪 · 维特根斯坦 · Ubuntu 长老 · 苏非诗人 · 一个说不出完整句子的野人……
-21 个声音同时照你，让你看到自己在不同光线下的样子
-
 </div>
 
 ---
