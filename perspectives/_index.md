@@ -27,6 +27,7 @@
 | wittgenstein | 维特根斯坦 | `wittgenstein.md` | 概念澄清、语言陷阱、思维边界 |
 | zizek | 齐泽克 | `zizek.md` | 意识形态、欲望结构、看穿表象 |
 | liulian | 润州刘炼 | `liulian.md` | 没天赋、苦练、代价、平庸逆袭 |
+| yeren | 野人 | `yeren.md` | 过度思考、回到身体、直觉、本能、简单 |
 
 ---
 
