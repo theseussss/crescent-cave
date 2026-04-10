@@ -28,6 +28,8 @@
 | zizek | 齐泽克 | `zizek.md` | 意识形态、欲望结构、看穿表象 |
 | liulian | 润州刘炼 | `liulian.md` | 没天赋、苦练、代价、平庸逆袭 |
 | yeren | 野人 | `yeren.md` | 过度思考、回到身体、直觉、本能、简单 |
+| kollontai | 柯伦泰 | `kollontai.md` | 权力位置、隐形劳动、经济依附、关系中的结构 |
+| camus | 加缪 | `camus.md` | 虚无感、意义缺席、荒诞、清醒地活、推石头 |
 
 ---
 
