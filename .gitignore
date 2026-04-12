@@ -1,3 +1,8 @@
 # omc runtime state
 .omc/
-crescent-cave/.omc/
+
+# Claude Code / oh-my-claudecode 本地文件
+.claude/
+AGENTS.md
+local_cache/
+crescent-cave/
