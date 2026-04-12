@@ -55,11 +55,11 @@
 
 1. **倾听** — 你说出体验或困惑
 2. **选角** — 谁来说话？三条路径可混合：AI匹配、角色认领、随机漫游
-3. **对话** — 独白、圆桌、流觞，三种结构
-4. **综合** — 分析报告或会饮记录
-5. **多轮** — 你继续深入，视角们会修正自己的判断
+3. **对话** — 每个角色以自己的方式跟你开口说话——这是对话的一半，等你接下一句
+4. **综合** — 分析报告或会饮记录（师傅们围坐讨论你的问题）
+5. **续接** — 你可以跟某个角色深聊、换人、拉人进来会饮
 
-像几个不同传统的师傅围坐在一起，认真对待你的问题。
+像几个不同传统的师傅在认真对待一个年轻人的真实困惑。
 
 ## 配置空间
 
@@ -88,11 +88,11 @@
 
 | 结构 | 描述 |
 |---|---|
-| **独白**（默认） | 各角色独立分析，互不知晓 |
-| **圆桌** | 先各自发言，再看到彼此后回应一轮 |
-| **流觞** | 串行接力，前人的话后人听到再说 |
+| **独白**（默认） | 各角色各自跟你说话，互不知晓 |
+| **圆桌** | 角色发言后由AI编织为一篇师傅们围坐讨论的会饮记录 |
+| **流觞** | 串行接力，前人的话后人听到再说，对话感最真，也最慢 |
 
-圆桌和流觞是**会饮模式**——角色之间会产生真实的对话和交锋。流觞最慢，但对话感最真。
+圆桌和流觞是**会饮模式**——产出是一篇对话录，像柏拉图《会饮篇》那样，师傅们在认真辩论你抛出的问题。
 
 ### 输出：说多少
 
@@ -107,8 +107,8 @@
 
 对话结构自动决定呈现格式：
 
-- **独白** → 分析报告（表格对比 + 共振 + 分歧）
-- **圆桌 / 流觞** → 会饮记录（柏拉图对话录体，保留交锋过程）
+- **独白** → 分析报告（各角色回应摘要 + 轻触共振与分歧）
+- **圆桌 / 流觞** → 会饮记录（对话录体，保留交锋过程和角色声音）
 
 每个角色标注来源：`[AI选]` `[自荐]` `[随机]`。
 
@@ -177,7 +177,7 @@ cd crescent-cave
 ```bash
 mkdir -p ~/.claude/skills/crescent-cave
 cp SKILL.md ~/.claude/skills/crescent-cave/
-cp -r perspectives ~/.claude/skills/crescent-cave/
+cp -r perspectives references ~/.claude/skills/crescent-cave/
 # 重启后使用 /crescent-cave 调用
 ```
 
@@ -186,7 +186,7 @@ cp -r perspectives ~/.claude/skills/crescent-cave/
 ```bash
 mkdir -p .cursor/skills/crescent-cave
 cp SKILL.md .cursor/skills/crescent-cave/
-cp -r perspectives .cursor/skills/crescent-cave/
+cp -r perspectives references .cursor/skills/crescent-cave/
 ```
 
 或在项目根目录创建 `.cursorrules`，将 `SKILL.md` 内容粘贴进去。
@@ -208,7 +208,7 @@ cp -r perspectives .github/perspectives
 ```bash
 mkdir -p .codex/skills/crescent-cave
 cp SKILL.md .codex/skills/crescent-cave/
-cp -r perspectives .codex/skills/crescent-cave/
+cp -r perspectives references .codex/skills/crescent-cave/
 ```
 
 或将 `SKILL.md` 内容添加到 `AGENTS.md`。
@@ -222,7 +222,7 @@ cp -r perspectives .codex/skills/crescent-cave/
 ```bash
 mkdir -p .antigravity/skills/crescent-cave
 cp SKILL.md .antigravity/skills/crescent-cave/
-cp -r perspectives .antigravity/skills/crescent-cave/
+cp -r perspectives references .antigravity/skills/crescent-cave/
 ```
 
 ### 通用方式（任何支持自定义指令的 AI IDE）
